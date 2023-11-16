@@ -4,6 +4,14 @@
 
 The **Role Based Auth .NET Sample** is an **sample ASP.NET Web API** to help understand how role based authentication can be implemented via JWTs in a **.NET 8** application. It utilizes an **InMemory database** using **Entity Framework Core** for storing user data and the **Argon2** hashing algorithm for encrypting passwords.
 
+### .NET Conf 2023
+
+This sample was created for Aditya Oberai's talk at .NET Conf 2023.
+
+You can download the presentation [here](AdityaOberai-DotNetConf-2023.pptx)
+
+## Understanding the API
+
 The API has 1 controller:
 
 - **AuthController**: Contains the login, registration, and test APIs
@@ -104,6 +112,6 @@ The `AuthController` contains the login, registration, and test APIs we are usin
 
 ## Steps to Setup
 
-- Clone the repository and enter it
+- Clone the repository and enter the directory
 - Run the command `dotnet restore`
 - Run the command `dotnet run`
