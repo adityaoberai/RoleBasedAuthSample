@@ -1,7 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Runtime.InteropServices;
-using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
 
 namespace RoleBasedAuthSample.Models
 {

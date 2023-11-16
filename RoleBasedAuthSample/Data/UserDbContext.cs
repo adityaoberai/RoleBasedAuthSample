@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RoleBasedAuthSample.Models;
-using System.Collections.Generic;
-using System.Reflection.Metadata;
 
 namespace RoleBasedAuthSample.Data
 {
@@ -13,10 +11,9 @@ namespace RoleBasedAuthSample.Data
 
         public DbSet<User> Users { get; set; }
 
+        // Adding support for List<string> property in User model
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Adding support for List<string> property in User model
-
             modelBuilder.Entity<User>()
                 .Property(u => u.Roles)
                 .HasConversion(
